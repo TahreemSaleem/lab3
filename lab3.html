@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>2D game</title>
+<style>
+
+@-webkit-keyframes move {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+ 
+@keyframes move {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+
+#bg_img{
+
+	
+	background: url(images.jpg) repeat-x ;
+	-webkit-animation: move 20s linear infinite;
+	animation: move 20s linear infinite;
+	height:161px;
+}
+
+
+.posi{
+	margin-top: 60px;
+	position:absolute;
+	top:10px;
+
+}
+.posi1{
+	margin-top: 20px;
+	position:absolute;
+	top:0px;
+
+}
+
+
+
+ figure:target { 
+	
+    display:none;
+}
+ 
+
+</style>
+</head>
+<body>
+
+<div id="main">
+<div id="bg_img">
+
+</div>
+
+<figure id = "fig" class = "posi">
+		<img src="download.png" width ="40px" height ="40px" >
+</figure>
+<figure id = "fig1" class = "posi1">
+		<img src="download.png" width ="40px" height ="40px" >
+</figure>
+
+
+
+<a  href="#fig" ><img src="up.png" width ="40px" height ="40px" ></a>
+
+<a  href="#fig1"  ><img src="down.png" width ="40px" height ="40px"></a>
+
+</div>
+
+
+
+</body>
+</html>
